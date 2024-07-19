@@ -1,2 +1,2 @@
 # Equipo3-REPOSITORIO
-Carlos, Rodolfo,Antoine
+Carlos Gabriel Bañuelos Cano, Rodolfo,Antoine
