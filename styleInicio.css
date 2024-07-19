@@ -1,0 +1,271 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5a1;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1.inicio {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    margin: 0; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background: rgb(253, 161, 210);
+    color: white;
+}
+
+a.titulo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    padding: 0px 20px;
+    text-align: center; 
+}
+
+ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.banner {
+    background-image: linear-gradient(100deg, #000000, #00000020),
+    url('img/Logo tienda.png');
+    height: 60rem;
+    background-position: center;
+}
+
+.content-banner {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
+
+.content-banner p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.content-banner h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.content-banner a {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(253, 161, 210);
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+.top-categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contenedor-cat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-categoria {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card-categoria:hover {
+    transform: translateY(-10px);
+}
+
+.categoria-abarrotes {
+    background-image: linear-gradient(#00000080, #00000080),
+    url('img/abarroteslo.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.categoria-limpieza {
+    background-image: linear-gradient(#00000080, #00000080),
+    url('img/limpio.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.categoria-dulceria {
+    background-image: linear-gradient(#00000080, #00000080),
+    url('img/dulces.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.card-categoria p {
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.card-categoria p::after {
+    content: '';
+    width: 2.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card-categoria span {
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-categoria span:hover {
+    color: rgb(253, 161, 210);
+}
+
+footer {
+    position: relative;
+    color: white;
+    background: rgb(253, 161, 210);
+    padding: 10px 0px;
+    text-align: center;
+    clear: both;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul li {
+        padding: 10px 0;
+    }
+
+    .logo-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contenedor-cat {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .banner {
+        height: 40rem;
+        padding: 20rem 0;
+    }
+
+    .content-banner h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    h1.inicio {
+        font-size: 1.5em;
+    }
+
+    ul li a p {
+        font-size: 10px;
+    }
+
+    .contenedor-cat {
+        grid-template-columns: 1fr;
+    }
+
+    .card-categoria {
+        height: 15rem;
+    }
+
+    .banner {
+        height: 30rem;
+        padding: 15rem 0;
+    }
+
+    .content-banner h2 {
+        font-size: 2rem;
+    }
+
+    .content-banner a {
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+    }
+}

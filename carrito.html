@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aseo</title>
+    <link rel="stylesheet" href="stylecarrito.css">
+</head>
+<body class="articulos">
+    <!-- Cabecera -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Inicio.html" class="landin">
+                        <img src="img/flecha.png" alt="INICIO" height="40px" width="40px">
+                        <p>Atrás</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo-container">
+                <a href="Inicio.html"><img src="img/Logo tienda.png" class="logo" alt="Logo"></a>
+                <a href="Inicio.html" class="titulo"><h1 class="inicio">La Tiendita</h1></a>
+            </div>
+            <ul>
+               
+                <li>
+                    <a href="Inicio.html" class="landin">
+                        <img src="img/casa.png" alt="INICIO" height="40px" width="40px">
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="abarrotes.html" class="landin">
+                        <img src="img/carrito-de-compras.png" alt="CARRITO" height="40px" width="40px">
+                        <p>Carrito</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="landin">
+                        <img src="img/customer-service.png" alt="CONTACTO" height="50px" width="50px">
+                        <p>Contacto</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="landin">
+                        <img src="img/user.png" alt="LOGIN" height="50px" width="50px">
+                        <p>Inicio de sesión</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <main>
+        <section id="cart-section">
+            <ul id="cart">
+                
+            </ul>
+            <div class="cart-summary">
+                <p>Total: $<span id="total">0</span></p>
+            </div>
+            
+            <button class="comprar" onclick="comprar()">Comprar</button>
+        
+        </section>
+    </main>
+<script src="carrito.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        loadCart();
+    });
+</script>
+    
+    <!-- Pie de página -->
+    <footer>
+        <b>Cualquier duda o inconveniente puedes ponerte en contacto con nosotros.</b>
+        <br>
+        <a href="contacto.html" target="_blank">Contactos</a>
+    </footer>
+</body>
+</html>

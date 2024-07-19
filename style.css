@@ -1,0 +1,237 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5a1;
+    
+}
+
+body.login {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #f5f5f5a1;
+    height: 100vh;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+    background: rgb(253, 161, 210);
+    color: white;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    text-align: center; 
+}
+
+ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a p {
+    margin: 0;
+    font-size: 12px;
+}
+
+a.registro {
+    color: blue;
+    text-decoration: none;
+}
+
+a.titulo {
+    color: blue;
+    text-decoration: none;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1.inicio {
+    color: white;
+    font-size: 40px;
+    text-align: left;
+    margin: 0; 
+}
+
+a.titulo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+nav.canasta {
+    background: rgb(253, 161, 210);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+div.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.olvido {
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.olvido:hover {
+    text-decoration: underline;
+}
+
+a.registro {
+    margin: -5px 0 20px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+a.registro:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: rgb(253, 161, 210);
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+img.contacto {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    margin: auto; 
+    margin-top: 50px; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: rgba(253, 182, 220, 0.411);
+    border: 2px solid rgb(0, 0, 0);
+    color: #000000;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(243, 128, 189);
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: rgb(253, 161, 210);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.bton {
+    display: inline-block;
+    background-color: rgb(253, 161, 210);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 25px;
+    margin: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #000000;
+    box-shadow: 0 0 20px rgb(253, 161, 210);
+    cursor: pointer;
+}
+
+
+
+footer {
+    position: relative;
+    color: white;
+    background: rgb(253, 161, 210);
+    padding: 10px 0px;
+    text-align: center;
+    clear: both;
+    font-family: 'Times New Roman', Times, serif;
+}

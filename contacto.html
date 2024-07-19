@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Inicio.html" class="landin">
+                        <img src="img/flecha.png" alt="INICIO" height="40px" width="40px">
+                        <p>Atrás</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo-container">
+                <a href="Inicio.html"><img src="img/Logo tienda.png" class="logo" alt="Logo"></a>
+                <a href="Inicio.html" class="titulo"><h1 class="inicio">La Tiendita</h1></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="nosotros.html" class="landin">
+                        <img src="img/grupo.png" alt="NOSOTROS" height="40px" width="40px">
+                        <p>Nosotros</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="Inicio.html" class="landin">
+                        <img src="img/casa.png" alt="INICIO" height="40px" width="40px">
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="login.html" class="landin">
+                        <img src="img/user.png" alt="LOGIN" height="50px" width="50px">
+                        <p>Inicio de sesión</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <form>
+     
+        <h2>Contacto</h2>
+        <div class="input-group">
+
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" placeholder="Nombre">
+
+            <label for="phone">Telefono</label>
+            <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+            <label for="email">Correo</label>
+            <input type="email" name="email" id="email" placeholder="Correo">
+
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+            <input class="btn" onclick="enviar()" type="submit" value="Enviar">
+
+        </div>
+
+    </form>
+    <script src="carrito.js"></script>
+</body>
+</html>

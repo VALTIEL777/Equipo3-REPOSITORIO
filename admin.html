@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="tabla.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="Inicio.html" class="landin">
+                    <img src="img/flecha.png" alt="INICIO" height="40px" width="40px">
+                    <p>Atrás</p>
+                </a>
+            </li>
+        </ul>
+        <div class="logo-container">
+            <a href="Inicio.html"><img src="img/Logo tienda.png" class="logo" alt="Logo"></a>
+            <a href="Inicio.html" class="titulo"><h1 class="inicio">La Tiendita</h1></a>
+        </div>
+        <ul>
+            <li>
+                <a href="Inicio.html" class="landin">
+                    <img src="img/casa.png" alt="INICIO" height="40px" width="40px">
+                    <p>Inicio</p>
+                </a>
+            </li>
+            <li>
+                <a href="login.html" class="landin">
+                    <img src="img/user.png" alt="LOGIN" height="50px" width="50px">
+                    <p>Inicio de sesión</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contenido">
+        <h1>Clientes</h1>
+        <p>Gestión de clientes</p>
+        <div class="btn-agregar">
+            <a href="clientes-registro.html">
+                <button><i class="fa fa-plus"></i> Agregar Cliente</button>
+            </a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th>Operaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Registro de ejemplo -->
+                <tr>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>Gómez</td>
+                    <td>271-123-4567</td>
+                    <td>juan.perez@utcv.edu.mx</td>
+                    <td>
+                        <div class="operaciones">
+                            <button><i class="fa fa-eye"></i> Ver</button>
+                            <button><i class="fa fa-pencil"></i> Editar</button>
+                            <button><i class="fa fa-trash"></i> Eliminar</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

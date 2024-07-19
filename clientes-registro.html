@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="admin.html" class="landin">
+                    <img src="img/flecha.png" alt="INICIO" height="40px" width="40px">
+                    <p>Atrás</p>
+                </a>
+            </li>
+        </ul>
+        <div class="logo-container">
+            <a href="Inicio.html"><img src="img/Logo tienda.png" class="logo" alt="Logo"></a>
+            <a href="Inicio.html" class="titulo"><h1 class="inicio">La Tiendita</h1></a>
+        </div>
+        <ul>
+            <li>
+                <a href="Inicio.html" class="landin">
+                    <img src="img/casa.png" alt="INICIO" height="40px" width="40px">
+                    <p>Inicio</p>
+                </a>
+            </li>
+            <li>
+                <a href="admin.html" class="landin">
+                    <img src="img/admin.png" alt="LOGIN" height="50px" width="50px">
+                    <p>Admin</p>
+                </a>
+            </li>
+            <li>
+                <a href="login.html" class="landin">
+                    <img src="img/user.png" alt="LOGIN" height="50px" width="50px">
+                    <p>Inicio de sesión</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="contenido">
+        <h1>Nuevo cliente</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidoP">Apellido Paterno:</label>
+                <input type="text" id="apellidoP" name="apellidoP" required>
+            </div>
+            <div class="form-group">
+                <label for="apellidoM">Apellido Materno:</label>
+                <input type="text" id="apellidoM" name="apellidoM" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <div class="btn-agregar">
+                <button type="submit">Agregar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

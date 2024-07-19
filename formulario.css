@@ -1,0 +1,50 @@
+form {
+    margin: auto;
+    padding-right: 50px;
+    width: 100%;
+    max-width: 600px; /* Limita el ancho máximo del formulario */
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn-agregar {
+    margin-bottom: 20px;
+}
+
+.btn-agregar button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar button:hover {
+    background-color: #45a049;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}

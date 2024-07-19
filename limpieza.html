@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza</title>
+    <link rel="stylesheet" href="styleCompra.css">
+</head>
+<body class="articulos">
+    <!-- Cabecera -->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Inicio.html" class="landin">
+                        <img src="img/flecha.png" alt="INICIO" height="40px" width="40px">
+                        <p>Atrás</p>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="logo-container">
+                <a href="Inicio.html"><img src="img/Logo tienda.png" class="logo" alt="Logo"></a>
+                <a href="Inicio.html" class="titulo"><h1 class="inicio">La Tiendita</h1></a>
+            </div>
+            <ul>   
+                <li>
+                    <a href="Inicio.html" class="landin">
+                        <img src="img/casa.png" alt="INICIO" height="40px" width="40px">
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="carrito.html" class="landin">
+                        <img src="img/carrito-de-compras.png" alt="CARRITO" height="40px" width="40px">
+                        <p>Carrito</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="landin">
+                        <img src="img/customer-service.png" alt="CONTACTO" height="50px" width="50px">
+                        <p>Contacto</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="landin">
+                        <img src="img/user.png" alt="LOGIN" height="50px" width="50px">
+                        <p>Inicio de sesión</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido -->
+    <section class="compra">
+        <main>
+            <div class="contenedor">
+                <div class="item">
+                    <img src="img/axion.jpeg" alt="Producto 1" class="imagen">
+                    <div class="detalles">
+                        <h2>Axion</h2>
+                        <p>Jabón para Trastes Axion 1.1L</p>
+                        <p>Precio: $67.00</p>
+                        <button onclick="addToCart('Axion', 67.00)" class="boton">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/cloro.png" alt="Producto 2" class="imagen">
+                    <div class="detalles">
+                        <h2>Cloralex</h2>
+                        <p>Cloralex Blanqueador 950ml</p>
+                        <p>Precio: $19.50</p>
+                        <button onclick="addToCart('Cloralex', 19.50)" class="boton">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/esponja.jpg" alt="Producto 3" class="imagen">
+                    <div class="detalles">
+                        <h2>Fibra Scoth-Brite</h2>
+                        <p>Fibra Scoth-Brite 1Pz</p>
+                        <p>Precio: $7.50</p>
+                        <button onclick="addToCart('Fibra Scoth-Brite', 7.50)" class="boton">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/downy.jpg" alt="Producto 4" class="imagen">
+                    <div class="detalles">
+                        <h2>Suavizante Downy</h2>
+                        <p>Suavizante Downy 800ml</p>
+                        <p>Precio: $30.00</p>
+                        <button onclick="addToCart('Suavizante Downy', 30.00)" class="boton">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/pinol.jpg" alt="Producto 5" class="imagen">
+                    <div class="detalles">
+                        <h2>Limpiador Pinol</h2>
+                        <p>Pinol Limpiador Multiusos 2L</p>
+                        <p>Precio: $55.00</p>
+                        <button onclick="addToCart('Limpiador Pinol', 55.00)" class="boton">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <b>Cualquier duda o inconveniente puedes ponerte en contacto con nosotros.</b>
+        <br>
+        <a href="contacto.html" target="_blank">Contactos</a>
+    </footer>
+
+    <!-- Script -->
+    <script src="carrito.js"></script>
+</body>
+</html>
